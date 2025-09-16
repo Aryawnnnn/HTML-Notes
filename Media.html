@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Media Tutorial Notes</title>
+</head>
+<body>
+  <header>
+    <h1>HTML Media Tutorial Notes</h1>
+    <p>Notes about using images, audio, video, and embedded content in HTML.</p>
+  </header>
+
+  <main>
+    <h2>I. Introduction to Media</h2>
+    <p>Media elements (images, audio, video, iframe) allow us to add rich content to web pages.</p>
+    <p>They improve user experience by including visuals, sound, and interactive content.</p>
+
+    <h2>II. Image Tag</h2>
+    <ul>
+      <li><strong>&lt;img&gt;</strong> → used to display images.</li>
+      <li><strong>src</strong> → source of the image.</li>
+      <li><strong>alt</strong> → alternate text (shown if image is missing, important for accessibility).</li>
+      <li><strong>width</strong> / <strong>height</strong> → size of the image.</li>
+    </ul>
+    <img src="https://www.tutorialspoint.com/html/images/html_images.jpg" height="200px" width="300px" alt="image tag syntax">
+
+    <h2>III. Audio Tag</h2>
+    <ul>
+      <li><strong>&lt;audio&gt;</strong> → embeds audio files.</li>
+      <li><strong>controls</strong> → adds play, pause, and volume buttons.</li>
+      <li><strong>autoplay</strong> → plays automatically when page loads.</li>
+      <li><strong>loop</strong> → repeats audio automatically.</li>
+      <li><strong>muted</strong> → starts audio in muted state.</li>
+    </ul>
+    <img src="https://samanthaming.gumlet.io/tidbits/82-html-audio-tag.jpg.gz?format=auto" height="250px" alt="audio tag syntax">
+    <p>Example:</p>
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+
+    <h2>IV. Video Tag</h2>
+    <ul>
+      <li><strong>&lt;video&gt;</strong> → embeds video files.</li>
+      <li><strong>controls</strong> → adds play, pause, and volume controls.</li>
+      <li><strong>autoplay</strong> → video starts automatically.</li>
+      <li><strong>loop</strong> → repeats video automatically.</li>
+      <li><strong>muted</strong> → starts muted.</li>
+      <li><strong>poster</strong> → thumbnail shown before video plays.</li>
+    </ul>
+    <img src="https://samanthaming.gumlet.io/tidbits/91-html-video.jpg.gz?format=auto" height="300px" alt="video tag syntax">
+    <p>Example:</p>
+    <video width="400" controls poster="https://via.placeholder.com/400x250">
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>V. Embedding External Media (iframe)</h2>
+    <ul>
+      <li><strong>&lt;iframe&gt;</strong> → used to embed external content like YouTube videos, Google Maps, or other websites.</li>
+      <li><strong>src</strong> → the URL of the embedded content.</li>
+      <li><strong>width</strong> / <strong>height</strong> → size of the iframe.</li>
+      <li><strong>allowfullscreen</strong> → lets video go full screen.</li>
+    </ul>
+    <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf_vVww03ICoxj0TRp-1agbBa2wZYJ-sVgfqz4epaieusOD13Ue9qpJR7luxktvRZvWON1StBRC22EXcrYu-1SU5QgrTbAxolilxUmDIf-Nyige_7e7_iN3YMFj8R15Q5uunJVgmrV1-gIb2ckMFFqEH-Go?key=hA_bluT_cfSkpC8l93yi1w" alt="embedding yt video">
+    <p>Example:</p>
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/a4j9R_DvZ8M" title="YouTube video" allowfullscreen></iframe>
+  </main>
+</body>
+</html>

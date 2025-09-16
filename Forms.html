@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Form Tutorial Notes</title>
+</head>
+<body>
+  <header>
+    <h1>HTML Form Tutorial Notes</h1>
+    <p>Notes about creating and working with forms in HTML.</p>
+  </header>
+
+  <main>
+    <h2>I. Introduction to Forms</h2>
+    <p>Forms are used to collect user input like name, email, or feedback.</p>
+    <p>They are essential for login, signup, surveys, and search bars.</p>
+
+    <h2>II. Creating a Form</h2>
+    <ul>
+      <li><strong>form</strong> → container that holds all input fields.</li>
+      <li><strong>action</strong> → defines where the data will be sent.</li>
+      <li><strong>method</strong> → GET (data in URL) or POST (data hidden, safer).</li>
+    </ul>
+
+    <h2>III. Input Types & Attributes</h2>
+    <ul>
+      <li><strong>text</strong> → for names or general text.</li>
+      <li><strong>email</strong> → validates proper email format.</li>
+      <li><strong>password</strong> → masks characters.</li>
+      <li><strong>number</strong> → restricts input to numbers.</li>
+      <li><strong>radio</strong> → select one option.</li>
+      <li><strong>checkbox</strong> → select multiple options.</li>
+      <li><strong>date</strong> → pick a date.</li>
+      <li><strong>submit</strong> → button to send form data.</li>
+    </ul>
+
+    <h2>IV. Important Attributes</h2>
+    <ul>
+      <li><strong>id</strong> → unique identifier for an element.</li>
+      <li><strong>for</strong> → connects a label to an input (must match the input’s id).</li>
+      <li><strong>name</strong> → key used when data is sent to the server.</li>
+      <li><strong>placeholder</strong> → hint text inside an input field.</li>
+      <li><strong>required</strong> → makes the field mandatory.</li>
+      <li><strong>value</strong> → pre-fills the input with default text.</li>
+    </ul>
+
+    <h2>V. Textarea</h2>
+    <p>The <strong>textarea</strong> tag allows multi-line input, useful for comments or messages.</p>
+
+    <h2>VI. Example Form (with all concepts)</h2>
+    <form action="submit.php" method="post">
+      <label for="username">Name:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your name" required><br><br>
+
+      <label for="useremail">Email:</label>
+      <input type="email" id="useremail" name="useremail" placeholder="Enter your email"><br><br>
+
+      <label for="userpassword">Password:</label>
+      <input type="password" id="userpassword" name="userpassword"><br><br>
+
+      <label for="userage">Age:</label>
+      <input type="number" id="userage" name="userage"><br><br>
+
+      <p>Choose Gender:</p>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br><br>
+
+      <p>Select Hobbies:</p>
+      <input type="checkbox" id="reading" name="hobby" value="Reading">
+      <label for="reading">Reading</label>
+      <input type="checkbox" id="coding" name="hobby" value="Coding">
+      <label for="coding">Coding</label>
+      <input type="checkbox" id="sports" name="hobby" value="Sports">
+      <label for="sports">Sports</label><br><br>
+
+      <label for="country">Select Country:</label>
+      <select id="country" name="country">
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="australia">Australia</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="40" placeholder="Write something..."></textarea><br><br>
+
+      <input type="submit" value="Submit Form">
+    </form>
+  </main>
+</body>
+</html>
